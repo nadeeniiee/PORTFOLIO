@@ -1,0 +1,101 @@
+.navbar {
+  background-color: rgb(23, 27, 43) !important;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  color: rgb(220, 220, 238);
+  font-size: 2em !important;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  font-family: "Poppins", sans-serif;
+  color: white !important;
+  font-weight: 650;
+  font-size: 20px;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(26, 43, 201) !important;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  position: relative;
+  padding: 5px 0;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(26, 43, 201);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+      margin-left: 20px;
+      font-size: 1.8em;
+  }
+  .navbar-nav {
+      gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+      gap: 1.5rem;
+      padding-left: 20px;
+  }
+  .navbar-links li {
+      margin-left: 0;
+  }
+}

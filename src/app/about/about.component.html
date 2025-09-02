@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container text-white py-5">
+    <div class="text-center mb-5 pb-1">
+      <h1 class="section-title">About Me</h1>
+      <p class="about-text">
+        Hi, I’m Nadine, and ever since I was young, I’ve been fascinated with technology and how it continues to shape the world around us. 
+        My curiosity about how software works and my drive to create something meaningful through innovation led me to pursue a degree in Computer Science.
+      </p>
+      <p class="about-text">
+        One of my biggest aspirations is to develop my own video game. 
+        I’ve always admired how games can create lasting experiences for players with its stories, challenges, and emotions that stay with them long after playing. 
+        My goal is to bring together creativity, problem-solving, and technical expertise to design a game that not only entertains but also inspires others, just as games have inspired me.
+      </p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-6 mb-4">
+        <h2 class="section-title">Education</h2>
+        <ul class="list-unstyled">
+          <li><strong>Elementary:</strong> {{ education.elementary }}</li>
+          <li><strong>High School:</strong> {{ education.highschool }}</li>
+          <li><strong>College:</strong> {{ education.college }}</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h2 class="section-title">Skills</h2>
+        <p>Basic knowledge of: <strong>HTML, CSS, Java, JavaScript</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
